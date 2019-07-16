@@ -1,0 +1,29 @@
+{
+  "name": "@bouscaa/crowdrz",
+  "version": "1.0.0",
+  "description": "CLI to use crowdrz-js",
+  "main": "src/index.js",
+  "bin": {
+    "@bouscaa/crowdrz": "bin/crowdrz",
+    "crowdrz": "bin/crowdrz"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "crowdrz"
+  ],
+  "author": "Antonin Bouscarel",
+  "license": "MIT",
+  "dependencies": {
+    "arg": "^4.1.1",
+    "chalk": "^2.4.2",
+    "esm": "^3.2.25",
+    "inquirer": "^6.5.0",
+    "ora": "^3.4.0"
+  }
+}

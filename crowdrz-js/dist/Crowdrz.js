@@ -21,7 +21,6 @@ class Crowdrz {
     processList[this.scope][name](ressource, this.key, null, (err, res) => {
       if (err) {
         throw new Error(err);
-        return;
       }
       return res;
     });
