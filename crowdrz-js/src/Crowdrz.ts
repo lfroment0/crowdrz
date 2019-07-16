@@ -23,7 +23,12 @@ class Crowdrz {
   }
 
   public applyProcess(name: string, ressource: any) {
-    processList[this.scope][name](ressource, this.key);
+    processList[this.scope][name](ressource, this.key, (err: any, res: any) => {
+      if(err) {
+        console.log('err', err);
+      }
+      console.log('res', res);
+    });
   }
 
 }
