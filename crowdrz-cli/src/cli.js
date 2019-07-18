@@ -73,6 +73,8 @@ async function promptRunProcessOptions(options) {
 
 async function promptInitOptions(options) {
   const questions = [];
+
+  
 }
 
 async function promptStatusOptions(options) {
@@ -103,7 +105,6 @@ async function promptStatusOptions(options) {
   } else {
     ora('Instagram').fail();
   }
-
   return options;
 }
    

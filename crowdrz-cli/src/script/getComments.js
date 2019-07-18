@@ -33,17 +33,7 @@ async function promptMissingOptions() {
 
 module.exports = async function() {
   await promptMissingOptions();
-  ora('Find post data').start().succeed();
-  const commentsOra = ora('Loading post comments').start();
-  setTimeout(() => {
-    commentsOra.succeed();
-  }, 2000);
-  const exportOra = ora('Exporting data...').start();
-  setTimeout(() => {
-    exportOra.succeed();
-  }, 3000);
-
-  let crowdrz = new Crowdrz('facebook', 'EAAOdARHxc0YBAB1tBLkE55o01tf3oBRQnukOW84ahzmZAPPH8nhs6rEqXU6IUO0qzDQ9OnKDnJCYkS4Mm0QdNQXlqOm5U9UiVX1hK5yhK4GFZAQ1JE1XT0zA2JVOzMpJxJUxeJEKuy8SU0gNM5wWTyiYETxwONQ4luyw0SCpM9OLsSXZApgZA1MF5FHwaHUZD');
+  let crowdrz = new Crowdrz('facebook', 'EAAOdARHxc0YBABolBl0d5uw7zIpLsJFUChIV5gTuxxjzpE4wMZARNORfCWdx3ujB4l0NffFKKE1hZAQKuBIEsmiph1Lv9M1NcreG4o89FXpcuZA5WiPaTwBUFE9R1n1aiYjeHqPILyMdouUwlhSMcBaamcdaTB45XeoUZCeB0ZBVLKy1FTv1J4KQ2lYbe2a4ZD');
   let comments = crowdrz.applyProcess('getComments', '2394127887331679');
   console.log('comments', comments);
 }
