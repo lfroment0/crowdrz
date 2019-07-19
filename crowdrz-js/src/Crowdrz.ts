@@ -30,7 +30,6 @@ class Crowdrz {
       console.log('res', res);
     });
   }
-
 }
 
 module.exports = Crowdrz;

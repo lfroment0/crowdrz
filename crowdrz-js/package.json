@@ -16,6 +16,8 @@
     "typescript": "^3.5.3"
   },
   "dependencies": {
+    "json2csv": "^4.5.2",
+    "ora": "^3.4.0",
     "request": "^2.88.0"
   }
 }
